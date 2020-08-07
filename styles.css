@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background: white;
+  height: 800px;
+  width: 100%;
+}
+
+nav ul {
+  margin: 40px 0 0 1000px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.blwk {
+  background: black;
+  height: 800px;
+  width: 100%;
+  color: white;
+}
+
+.yllw {
+  background: #ffc700;
+  height: 1000px;
+  width: 100%;
+}
+
+.wht {
+  background: white;
+  height: 800px;
+  width: 100%;
+}
+
+#h-one {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#h-two {
+  font-size: 60px;
+}
+
+#h-thr {
+  font-size: 30px;
+}
+
+.container-head {
+  margin: 100px 0 0 100px;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#logo-one {
+  margin-right: 200px;
+}
+
+#logo-two {
+  margin-right: 200px;
+}
+
+#logo-thr {
+  margin-right: 100px;
+}
+
+#git {
+  color: black;
+}
+
+#mail {
+  color: #76b041;
+}
+
+#fb {
+  color: #3d6ad6;
+}
+
+#portrait {
+  width: 150px;
+  height: 300px;
+  border-radius: 20px;
+}
