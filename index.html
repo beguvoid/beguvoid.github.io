@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/B.png" />
+    <link rel="icon" href="images/Logo1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -20,11 +24,12 @@
   <body>
     <header>
       <nav>
+        <!-- <img id="logo" src="./images/Logo-big.jpg"> -->
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a id="contact-me" href="#contact">Contact Me</a></li>
         </ul>
       </nav>
       <div class="container-head">
@@ -37,27 +42,43 @@
         </p>
 
         <div class="logo">
-          </a>
           <a id="fb" href="https://facebook.com/beguvoid" target="_blank"
             ><i id="logo-one" class="fab fa-facebook-f fa-5x"></i
           ></a>
-          
+
           <a id="mail" href="contacts.html"
             ><i id="logo-two" class="fas fa-envelope fa-5x"></i
-          ><a
-          id="git"
-          href="https://github.com/beguvoid?tab=repositories"
-          target="_blank"
-          ><i id="logo-thr" class="fab fa-github fa-5x"></i
-        ></a>
+          ></a>
+          <a
+            id="git"
+            href="https://github.com/beguvoid?tab=repositories"
+            target="_blank"
+            ><i id="logo-thr" class="fab fa-github fa-5x"></i
+          ></a>
+          <a
+            id="in"
+            target="_blank"
+            href="https://www.linkedin.com/in/beguvoid/"
+            ><i id="logo-four" class="fab fa-linkedin-in fa-5x"></i
+          ></a>
         </div>
       </div>
     </header>
-    <section class="blwk">
-      <h1>In development</h1>
+    <section id="about" class="blwk">
+      <div>
+        <h1 id="quote">
+          "I code and learn for fun. My goal in the future is to become a
+          competent and confident developer that can teach others to code!"
+        </h1>
+        <p id="quote-p">-Me</p>
+      </div>
     </section>
-    <section class="yllw"><!--SECTION with Yellow background-->In development</section>
-    <section class="wht"><!-- SECTION with WHITE background-->In development</section>
+    <section class="yllw">
+      <h1 id="projects">In development</h1>
+    </section>
+    <section class="wht">
+      <h1 id="contact">In development</h1>
+    </section>
     <script src="index.js"></script>
   </body>
 </html>
