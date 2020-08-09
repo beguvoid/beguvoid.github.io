@@ -68,7 +68,7 @@ nav li a {
 }
 
 .container-head {
-  margin: 100px 0 0 100px;
+  margin: 100px 0 0 150px;
 }
 
 .logo {
@@ -77,19 +77,19 @@ nav li a {
 }
 
 #logo-one {
-  margin-right: 150px;
+  margin-right: 180px;
 }
 
 #logo-two {
-  margin-right: 150px;
+  margin-right: 180px;
 }
 
 #logo-thr {
-  margin-right: 150px;
+  margin-right: 180px;
 }
 
 #logo-four {
-  margin-right: 150px;
+  margin-right: 180px;
 }
 
 #git {
@@ -158,6 +158,7 @@ nav li a {
 #desc-one {
   color: #ffc700;
   background: black;
+  font-size: 19px;
   padding: 15px;
   border-radius: 30px;
   text-align: center;
@@ -169,6 +170,7 @@ nav li a {
 #desc-two {
   color: #ffc700;
   background: black;
+  font-size: 19px;
   padding: 15px;
   border-radius: 30px;
   text-align: center;
