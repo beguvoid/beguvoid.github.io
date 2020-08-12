@@ -29,7 +29,7 @@
     <header>
       <nav>
         <!-- <img id="logo" src="./images/Logo-big.jpg"> -->
-        <ul>
+        <ul class="nav-container">
           <li><a href="/">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -44,28 +44,24 @@
         <p id="h-thr">
           Located in Mongolia who's studying and learning daily to reach my goal
         </p>
+      </div>
+      <div class="logo">
+        <a id="fb" href="https://facebook.com/beguvoid" target="_blank"
+          ><i id="logo-one" class="fab fa-facebook-f fa-5x"></i
+        ></a>
 
-        <div class="logo">
-          <a id="fb" href="https://facebook.com/beguvoid" target="_blank"
-            ><i id="logo-one" class="fab fa-facebook-f fa-5x"></i
-          ></a>
-
-          <a id="mail" href="contacts.html"
-            ><i id="logo-two" class="fas fa-envelope fa-5x"></i
-          ></a>
-          <a
-            id="git"
-            href="https://github.com/begunew?tab=repositories"
-            target="_blank"
-            ><i id="logo-thr" class="fab fa-github fa-5x"></i
-          ></a>
-          <a
-            id="in"
-            target="_blank"
-            href="https://www.linkedin.com/in/beguvoid/"
-            ><i id="logo-four" class="fab fa-linkedin-in fa-5x"></i
-          ></a>
-        </div>
+        <a id="mail" href="contacts.html"
+          ><i id="logo-two" class="fas fa-envelope fa-5x"></i
+        ></a>
+        <a
+          id="git"
+          href="https://github.com/begunew?tab=repositories"
+          target="_blank"
+          ><i id="logo-thr" class="fab fa-github fa-5x"></i
+        ></a>
+        <a id="in" target="_blank" href="https://www.linkedin.com/in/beguvoid/"
+          ><i id="logo-four" class="fab fa-linkedin-in fa-5x"></i
+        ></a>
       </div>
     </header>
     <section id="about" class="blwk">
@@ -79,16 +75,27 @@
         </h1>
       </div>
     </section>
-    <section class="yllw">
-      <img id="react-logo" src="./images/React-icon.svg" alt="React Logo" />
-      <div id="desc-one"><p>ReactJS: To-do List App</p></div>
-      <img id="js-logo" src="./images/JS.png" alt="NodeJS Logo" />
-      <div id="desc-two"><p>ExpressJS: API</p></div>
+    <section id="projects" class="yllw">
+      <div class="project-container">
+        <div class="react-app-logo">
+          <img id="react-logo" src="./images/React-icon.svg" alt="React Logo" />
+          <div id="desc-one"><p>ReactJS: To-do List App</p></div>
+        </div>
+        <div class="url-app-logo">
+          <img id="js-logo" src="./images/JS.png" alt="NodeJS Logo" />
+          <!--  Bring in the link  once deployed-->
+          <div id="desc-two"><p>ExpressJS: URL Shortener API</p></div>
+        </div>
+        <div class="react-native-logo">
+          <img id="css-logo" src="./images/React-icon.svg" alt="React Logo" />
+          <div id="desc-thr"><p>React Native App &nbsp;[In Dev]</p></div>
+        </div>
+      </div>
     </section>
     <section id="contact" class="wht">
       <div class="flex-container">
         <div class="contact-row">
-          <h1>Contact me on any of these</h1>
+          <h1>Contact Info</h1>
           <p>
             <a href="#">
               <i id="small-two" class="fas fa-envelope"></i> Gmail</a
@@ -113,7 +120,7 @@
           </p>
         </div>
         <div class="technology">
-          <h1>Technologies I use</h1>
+          <h1>What I work in</h1>
           <p>JavaScript</p>
           <p>ReactJS</p>
           <p>ExpressJS</p>

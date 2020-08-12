@@ -11,11 +11,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Scroll measure
 // 297 to change class.
 
-document.addEventListener("scroll", (e) => {
-  let measureY = window.scrollY;
-  if (measureY > 190) {
-    document.getElementById("contact-me").style.position = "fixed";
-  } else if (measureY < 110) {
-    document.getElementById("contact-me").style.position = "";
-  }
-});
+// document.addEventListener("scroll", (e) => {
+//   let measureY = window.scrollY;
+//   if (measureY > 190) {
+//     document.getElementById("contact-me").style.position = "fixed";
+//   } else if (measureY < 110) {
+//     document.getElementById("contact-me").style.position = "";
+//   }
+// });

@@ -11,7 +11,44 @@ header {
   width: 100%;
 }
 
-nav ul {
+.nav-container {
+  display: flex;
+  flex-flow: row wrap;
+  /* margin: 40px 0 0 960px; */
+  margin-top: 40px;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.nav-container li {
+  margin-right: 40px;
+}
+
+.nav-container a:hover {
+  color: blue; /*For now */
+}
+/* @media all and (max-width: 800px) {
+  .nav-container {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items 
+    justify-content: space-around;
+  }
+}
+
+ Small screens 
+@media all and (max-width: 500px) {
+  .nav-container {
+     On small screens, we are no longer using row direction but column 
+    flex-direction: column;
+  }
+} */
+
+/* nav ul {
   margin: 40px 0 0 960px;
 }
 
@@ -24,7 +61,7 @@ nav li a {
   text-decoration: none;
   color: black;
   font-size: 20px;
-}
+} */
 
 #contact-me {
   border: 10px solid black;
@@ -37,9 +74,34 @@ nav li a {
 
 .blwk {
   background: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   height: 600px;
   width: 100%;
   color: white;
+}
+
+#portrait {
+  width: 200px;
+  height: 300px;
+  border-radius: 48%;
+  border: 2px solid white;
+  /* margin: 150px 0 0 300px; */
+  filter: grayscale(90%);
+  max-width: 100%;
+  height: auto;
+}
+
+#quote {
+  width: 600px;
+  height: 400px;
+  font-size: 40px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 200px;
+  /* margin: 190px 0 0 580px; */
 }
 
 .yllw {
@@ -72,24 +134,19 @@ nav li a {
 }
 
 .logo {
-  text-align: center;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
   margin-top: 150px;
 }
 
-#logo-one {
-  margin-right: 180px;
+.logo a {
+  padding: 0 80px;
 }
 
-#logo-two {
-  margin-right: 180px;
-}
-
-#logo-thr {
-  margin-right: 180px;
-}
-
-#logo-four {
-  margin-right: 180px;
+.logo i {
+  font-size: 100px;
 }
 
 #git {
@@ -104,80 +161,12 @@ nav li a {
   color: #3d6ad6;
 }
 
-#portrait {
-  width: 200px;
-  height: 300px;
-  border-radius: 48%;
-  border: 2px solid white;
-  margin: 150px 0 0 300px;
-  position: absolute;
-  filter: grayscale(90%);
-  max-width: 100%;
-  height: auto;
-}
-
+/* 
 #logo {
   margin: 30px 0 0 30px;
   width: 250px;
   height: 100px;
-}
-
-#quote {
-  width: 600px;
-  height: 400px;
-  position: absolute;
-  font-size: 40px;
-  color: white;
-  margin: 190px 0 0 580px;
-}
-
-#quote-p {
-  margin: 380px 0 0 300px;
-  position: absolute;
-  font-size: 25px;
-}
-
-#react-logo {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  background: black;
-  border-radius: 50%;
-  margin: 80px 0 0 250px;
-}
-
-#js-logo {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  background: black;
-  border-radius: 50%;
-  margin: 80px 0 0 600px;
-}
-
-#desc-one {
-  color: #ffc700;
-  background: black;
-  font-size: 19px;
-  padding: 15px;
-  border-radius: 30px;
-  text-align: center;
-  width: 150px;
-  position: absolute;
-  margin: 300px 0 0 260px;
-}
-
-#desc-two {
-  color: #ffc700;
-  background: black;
-  font-size: 19px;
-  padding: 15px;
-  border-radius: 30px;
-  text-align: center;
-  width: 150px;
-  position: absolute;
-  margin: 300px 0 0 610px;
-}
+} */
 
 .contact-row p {
   font-size: 18px;
@@ -200,6 +189,215 @@ nav li a {
   justify-content: space-around;
   margin-top: 60px;
 }
+
+.project-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+#react-logo,
+#css-logo,
+#js-logo {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: black;
+  border-radius: 50%;
+  margin: 80px 0 0 -100px;
+}
+
+#js-logo {
+  /* margin: 80px 0 0 600px; */
+  padding: 20px 20px;
+  width: 160px;
+  height: 160px;
+}
+
+#desc-one,
+#desc-two,
+#desc-thr {
+  color: #ffc700;
+  background: black;
+  font-size: 19px;
+  padding: 15px;
+  border-radius: 30px;
+  text-align: center;
+  width: 150px;
+  position: absolute;
+  margin: 330px 0 0 -85px;
+}
+
+@media all and (max-width: 1050px) {
+  body .logo a {
+    padding: 0 30px;
+  }
+
+  body #portrait {
+    width: 150px;
+    height: 200px;
+  }
+
+  body .yllw {
+    height: 450px;
+  }
+
+  body #react-logo,
+  body #css-logo,
+  body #js-logo {
+    width: 150px;
+    height: 150px;
+    margin-left: -90px;
+  }
+
+  body #js-logo {
+    padding: 20px 20px;
+    width: 110px;
+    height: 110px;
+  }
+
+  body #desc-one,
+  body #desc-two,
+  body #desc-thr {
+    width: 150px;
+    font-size: 15px;
+    margin-top: 260px;
+    margin-left: -100px;
+  }
+}
+/* Quote for Portrait  */
+@media all and (max-width: 815px) {
+  body #quote {
+    font-size: 20px;
+    width: 400px;
+    height: 350px;
+    margin-top: 250px;
+  }
+}
+
+/* Logos of Project */
+@media all and (max-width: 750px) {
+  body #react-logo,
+  body #css-logo,
+  body #js-logo {
+    width: 120px;
+    height: 120px;
+    margin-left: -50px;
+  }
+  body #js-logo {
+    padding: 20px 20px;
+    width: 80px;
+    height: 80px;
+  }
+
+  body .container-head {
+    margin-left: 50px;
+  }
+
+  body .yllw {
+    height: 400px;
+  }
+  body #desc-one,
+  body #desc-two,
+  body #desc-thr {
+    width: 100px;
+    height: 30px;
+    font-size: 11px;
+    margin-top: 260px;
+    margin-left: -50px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  body .nav-container a {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  body .container-head {
+    margin-left: 50px;
+  }
+
+  body header {
+    height: 600px;
+  }
+  body #h-one,
+  #h-thr {
+    font-size: 20px;
+  }
+
+  body #h-two {
+    font-size: 50px;
+  }
+  body .logo a {
+    padding: 0 10px;
+  }
+
+  body .logo i {
+    font-size: 50px;
+  }
+  /* breaks at 610 */
+  body #quote {
+    font-size: 28px;
+    width: 200px;
+    height: 350px;
+    margin-top: 80px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  body #react-logo,
+  body #css-logo,
+  body #js-logo {
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+  body #js-logo {
+    padding: 20px 20px;
+    width: 60px;
+    height: 60px;
+  }
+  body #desc-one,
+  body #desc-two,
+  body #desc-thr {
+    width: 80px;
+    height: 30px;
+    font-size: 11px;
+    margin-top: 240px;
+    margin-left: -53px;
+  }
+  body #h-one {
+    font-size: 20px;
+  }
+
+  body #h-thr {
+    font-size: 17px;
+    width: 400px;
+  }
+
+  body header {
+    height: 480px;
+  }
+
+  body .logo {
+    margin-top: 80px;
+  }
+  body #h-two {
+    font-size: 40px;
+  }
+
+  body .blwk {
+    height: 480px;
+  }
+}
+/* 
+#desc-two {
+  /* margin: 300px 0 0 0; 
+}
+
+#desc-thr {
+  /* margin: 300px 0 0 0;
+} */
 
 #footer-p {
   font-style: italic;
