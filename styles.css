@@ -33,20 +33,6 @@ header {
 .nav-container a:hover {
   color: blue; /*For now */
 }
-/* @media all and (max-width: 800px) {
-  .nav-container {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items 
-    justify-content: space-around;
-  }
-}
-
- Small screens 
-@media all and (max-width: 500px) {
-  .nav-container {
-     On small screens, we are no longer using row direction but column 
-    flex-direction: column;
-  }
-} */
 
 /* nav ul {
   margin: 40px 0 0 960px;
@@ -128,9 +114,10 @@ nav li a {
 #h-thr {
   font-size: 30px;
 }
-
 .container-head {
   margin: 100px 0 0 150px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .logo {
@@ -201,10 +188,9 @@ nav li a {
 #js-logo {
   width: 200px;
   height: 200px;
-  position: absolute;
   background: black;
   border-radius: 50%;
-  margin: 80px 0 0 -100px;
+  margin-top: 80px;
 }
 
 #js-logo {
@@ -223,9 +209,25 @@ nav li a {
   padding: 15px;
   border-radius: 30px;
   text-align: center;
-  width: 150px;
-  position: absolute;
-  margin: 330px 0 0 -85px;
+  width: 170px;
+  margin-top: 80px;
+}
+
+.footer {
+  height: 100px;
+}
+#footer-p {
+  font-style: italic;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 15px;
+}
+
+#footer-copy {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
 @media all and (max-width: 1050px) {
@@ -247,7 +249,6 @@ nav li a {
   body #js-logo {
     width: 150px;
     height: 150px;
-    margin-left: -90px;
   }
 
   body #js-logo {
@@ -261,8 +262,7 @@ nav li a {
   body #desc-thr {
     width: 150px;
     font-size: 15px;
-    margin-top: 260px;
-    margin-left: -100px;
+    margin-top: 80px;
   }
 }
 /* Quote for Portrait  */
@@ -282,7 +282,6 @@ nav li a {
   body #js-logo {
     width: 120px;
     height: 120px;
-    margin-left: -50px;
   }
   body #js-logo {
     padding: 20px 20px;
@@ -303,8 +302,7 @@ nav li a {
     width: 100px;
     height: 30px;
     font-size: 11px;
-    margin-top: 260px;
-    margin-left: -50px;
+    margin-top: 40px;
   }
 }
 
@@ -350,7 +348,6 @@ nav li a {
   body #js-logo {
     width: 100px;
     height: 100px;
-    margin-left: -50px;
   }
   body #js-logo {
     padding: 20px 20px;
@@ -363,9 +360,9 @@ nav li a {
     width: 80px;
     height: 30px;
     font-size: 11px;
-    margin-top: 240px;
-    margin-left: -53px;
+    margin-top: 40px;
   }
+  /* }
   body #h-one {
     font-size: 20px;
   }
@@ -373,7 +370,7 @@ nav li a {
   body #h-thr {
     font-size: 17px;
     width: 400px;
-  }
+  } */
 
   body header {
     height: 480px;
@@ -399,16 +396,148 @@ nav li a {
   /* margin: 300px 0 0 0;
 } */
 
-#footer-p {
-  font-style: italic;
-  text-align: center;
-  margin-top: 60px;
-  font-size: 15px;
-}
+@media all and (max-width: 450px) {
+  body .nav-container a {
+    font-size: 13px;
+  }
 
-#footer-copy {
-  font-style: italic;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 15px;
+  body .nav-container {
+    justify-content: center;
+  }
+
+  body .nav-container li {
+    margin-right: 10px;
+  }
+
+  body #quote {
+    font-size: 24px;
+    width: 180px;
+    height: 250px;
+    margin-top: 40px;
+  }
+
+  body #portrait {
+    margin-top: 40px;
+    width: 120px;
+    height: 150px;
+  }
+
+  body #desc-one,
+  body #desc-two,
+  body #desc-thr {
+    width: 100px;
+    height: 25px;
+    font-size: 11px;
+    margin-top: 40px;
+    margin-left: -10px;
+  }
+
+  body #react-logo,
+  body #css-logo,
+  body #js-logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  body #js-logo {
+    padding: 20px 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  body .project-container {
+    flex-flow: column;
+
+    align-items: center;
+  }
+
+  body .yllw {
+    height: 740px;
+  }
+}
+@media all and (max-width: 300px) {
+  body .nav-container li {
+    margin-right: 5px;
+  }
+
+  body .container-head {
+    margin-top: 80px;
+  }
+
+  body .nav-container a {
+    font-size: 10px;
+    margin-left: 3px;
+  }
+
+  body #h-two {
+    font-size: 35px;
+    font-weight: bolder;
+  }
+
+  body #h-one,
+  body #h-thr {
+    font-size: 15px;
+  }
+
+  body header {
+    height: 480px;
+  }
+
+  body .logo {
+    margin-top: 80px;
+  }
+
+  body .logo i {
+    font-size: 35px;
+  }
+
+  body #portrait {
+    margin-top: 40px;
+    width: 120px;
+    height: 150px;
+  }
+
+  body .blwk {
+    height: 480px;
+  }
+  body #quote {
+    font-size: 22px;
+    width: 200px;
+    height: 350px;
+    margin-top: 40px;
+  }
+
+  .contact-row p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  body .technology {
+    margin-top: 25px;
+  }
+
+  .technology p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .contact-row a {
+    text-decoration: none;
+  }
+
+  body #footer-p {
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    width: 270px;
+  }
+
+  #footer-copy {
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+  }
 }
