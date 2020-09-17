@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   border: 0;
   font-family: "Lato", sans-serif;
 }
@@ -50,16 +51,16 @@ nav li a {
 } */
 
 #contact-me {
-  border: 10px solid black;
+  border: 10px solid rgb(85, 146, 60);
   border-radius: 8px;
-  background: black;
+  background: rgb(85, 146, 60);
   color: white;
   font-weight: bold;
   /* position: fixed; */
 }
 
 .blwk {
-  background: black;
+  background: rgb(85, 146, 60);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -84,7 +85,7 @@ nav li a {
   width: 600px;
   height: 400px;
   font-size: 40px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-left: 40px;
   margin-top: 200px;
   /* margin: 190px 0 0 580px; */
@@ -228,6 +229,38 @@ nav li a {
   text-align: center;
   margin-top: 10px;
   font-size: 15px;
+}
+/* Introduction */
+.introduction {
+  background: rgb(5, 5, 5);
+  height: 500px;
+  color: white;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px 300px 300px;
+  grid-template-rows: 100px 100px 100px;
+  justify-content: center;
+}
+
+#intro-head {
+  font-size: 55px;
+  text-align: center;
+}
+
+.intro-items {
+  width: 250px;
+  margin-top: 140px;
+  text-align: center;
+}
+
+.intro-items a {
+  color: rgb(85, 146, 60);
+}
+
+.intro-items i {
+  font-size: 90px;
+  color: rgb(0, 132, 255);
+  margin-top: 20px;
 }
 
 @media all and (max-width: 1050px) {
